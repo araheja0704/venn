@@ -9,7 +9,7 @@ function App() {
         </nav>
       </header>
       <main className="main-content">
-        <h1 className="brand-name">Venn</h1>
+        <img src = "venn.png"/>
         <br/>
         <br/>
         <button className="primary-button" onClick={() => window.location.href = 'https://tally.so/r/3lWGqV'}>

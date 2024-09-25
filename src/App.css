@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Roboto Mono', sans-serif;
-  background-color: #fdecec; /* Pale pink background */
+  background-color: #9C0D38; /* Pale pink background */
   color: #800020; /* Burgundy text */
   display: flex;
   flex-direction: column;
@@ -36,11 +36,12 @@ body {
   display: flex;
   justify-content: center; /* Centers navigation links horizontally */
   gap: 30px;
+
 }
 
 .nav-links a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
   color: #ffffff; /* Burgundy text */
   transition: color 0.3s;
 }
@@ -71,8 +72,8 @@ body {
 
 .primary-button {
   padding: 15px 30px;
-  background-color: #9C0D38; /* Burgundy button */
-  color: #fff;
+  background-color: #ffffff; /* Burgundy button */
+  color: #00274C;
   border: none;
   font-size: 1rem;
   border-radius: 25px;
