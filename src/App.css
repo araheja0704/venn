@@ -1,42 +1,132 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', sans-serif;
+  background-color: #fdecec; /* Pale pink background */
+  color: #800020; /* Burgundy text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures body takes full viewport height */
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  width: 100%; /* Use 100% to avoid overflow */
+  padding: 20px 50px; /* Reduced padding for a cleaner layout */
+  display: flex;
+  justify-content: space-between; /* Spread items across the entire width */
+  align-items: center;
+  background-color: #CE5374; /* Add background if needed */
+  border-bottom: 1px solid #800020; /* Line under the header */
+  box-sizing: border-box;
+  position: fixed; /* Fixed header to stick to top */
+  top: 0;
+  left: 0;
+  z-index: 100; /* Ensures header stays on top of other elements */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-links {
+  display: flex;
+  justify-content: center; /* Centers navigation links horizontally */
+  gap: 30px;
 }
 
-.card {
-  padding: 2em;
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff; /* Burgundy text */
+  transition: color 0.3s;
 }
 
-.read-the-docs {
-  color: #888;
+.nav-links a:hover {
+  color: #5f0016; /* Darker burgundy on hover */
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.main-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.brand-name {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.1em;
+  color: #9C0D38; /* Burgundy text */
+}
+
+.primary-button {
+  padding: 15px 30px;
+  background-color: #9C0D38; /* Burgundy button */
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
+  outline: none; /* Remove the default blue focus outline */
+}
+
+.primary-button:hover {
+  background-color: #5f0016; /* Darker burgundy on hover */
+  opacity: 0.9; /* Adds a fade-in effect on hover */
+}
+
+.primary-button:focus {
+  background-color: #5f0016; /* Similar color for focus */
+  outline: none; /* Custom focus style (removes blue outline) */
+}
+
+.primary-button:active {
+  transform: scale(0.98); /* Adds a slight press effect when clicked */
+  opacity: 0.8; /* Makes the button slightly fade when clicked */
+}
+
+/* Removing focus blue outline and adding custom styles */
+.primary-button:focus-visible {
+  outline: none;
+  opacity: 0.9;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  color: #9C0D38; /* Burgundy text */
+  display: flex;
+  justify-content: center; /* Centers footer content */
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #800020; /* Burgundy text */
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #5f0016; /* Darker burgundy on hover */
 }
