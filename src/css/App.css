@@ -50,14 +50,6 @@ body {
   color: #5f0016; /* Darker burgundy on hover */
 }
 
-.main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
-}
-
 .main-logo {
   width: 120px;
   margin-bottom: 20px;
@@ -123,3 +115,47 @@ body {
   background-color: blue;
   transition: left 0.02s linear; /* Smooth animation */
 }
+
+.main-content {
+  position: relative; /* Ensure this is positioned above the bubbles */
+  z-index: 1; /* Higher z-index than the bubbles */
+}
+
+.logo-img {
+  width: 400px;  /* Adjust based on your logo size */
+  height: auto;
+  filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.4)); /* Shadow under the logo for depth */
+  transform: perspective(1000px) rotateX(15deg) rotateY(10deg); /* Perspective transformation for 3D tilt */
+  transition: transform 0.5s ease, filter 0.5s ease; /* Smooth transition effect */
+}
+
+.logo-img:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.1); /* Reset to normal and scale up slightly on hover */
+  filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.6)); /* Enhance shadow on hover for more pronounced depth */
+}
+
+.waitlist-btn {
+  background-color: #FCD757; /* Mustard color */
+  color: #086375; /* Caribbean Current for the text */
+  padding: 15px 30px;
+  font-family: 'Arial';
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px; /* Rounded shape */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15), 
+              0 8px 20px rgba(0, 0, 0, 0.1); /* Added layers for depth */
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.waitlist-btn:hover {
+  transform: scale(1.05); 
+  background-color: #ffffff; 
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 
+              0 15px 25px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+

@@ -1,22 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import './css/App.css';
-import CircleIntersection from './js/components/CircleIntersection'; 
+import BubbleBackground from './js/components/Bubbles';
+import Logo from './js/components/Logo';
+import Button from './js/components/Button';
+
 
 
 function App() {
     return (
       <>
-        <main className="main-content">
-          <img src="logo.png" alt="Venn Diagram" />
+        <BubbleBackground />
+        <div className="main-content">
+          <Logo />
           <br />
           <br />
-          <button
-            className="primary-button"
-            onClick={() => (window.location.href = 'https://tally.so/r/3lWGqV')}
-          >
-            Join our Waitlist
-          </button>
-        </main>
+          <br />
+          <a href = "https://tally.so/r/3lWGqV">
+          <Button />
+          </a>
+        </div>
       </>
     );
   }
