@@ -8,7 +8,7 @@ function Navbar() {
   return (
       <div className="navbar">
           <div className="navbar-left">
-          <span className="navbar-title">venn</span>
+          <a href="/" className="navbar-title">venn</a> {/* Make "venn" clickable */}
           </div>
           <div className="navbar-right">
               <InstagramIcon />

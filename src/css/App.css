@@ -165,7 +165,7 @@ body {
   color: #086375; /* Lavender color */
   font-size: 40px; /* Increase the size to make it bigger */
   text-decoration: none;
-  transition: transform 0.3s ease;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .instagram-icon:hover {
@@ -179,12 +179,12 @@ body {
   right: 0;
   width: 100%;
   height: 70px;
-  background-color: #E3DFFF; /* Lavender color */
+  background: linear-gradient(90deg, #E3DFFF, #D0C4FF);/* Lavender color */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 40px; /* Adjust padding for spacing */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
 
@@ -215,7 +215,21 @@ body {
 
 .navbar-title {
   font-family: 'Open Sans', sans-serif;
-  font-size: 45px;
-  font-weight: 700;
-  color: #086375; /* Adjust the color if needed */
+  font-size: 45px; /* Larger font size */
+  font-weight: 700; /* Bolder font weight */
+  color: #086375;
+  letter-spacing: 1px; /* Adds a subtle spacing for a polished look */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-title:hover {
+  opacity: 0.8; 
+}
+
+.navbar-left, .navbar-right {
+  padding: 0 20px;
+}
+
+.navbar {
+  align-items: center;
 }
