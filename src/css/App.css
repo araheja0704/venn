@@ -135,8 +135,8 @@ body {
 }
 
 .waitlist-btn {
-  background-color: #FCD757; /* Mustard color */
-  color: #086375; /* Caribbean Current for the text */
+  background-color: #E3DFFF ; /* Mustard color */
+  color: #086375 ; /* Caribbean Current for the text */
   padding: 15px 30px;
   font-family: 'Arial';
   text-transform: uppercase;
@@ -158,4 +158,5 @@ body {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 
               0 15px 25px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
 }
+
 

@@ -12,7 +12,7 @@
   .bubble {
     position: absolute;
     bottom: -150px;
-    background-color: rgba(254, 192, 206, 0.5); /* Transparent FECOCE bubbles */
+    background-color: #E3DFFF ; /* Transparent FECOCE bubbles */
     border-radius: 50%;
     opacity: 0.7;
     animation: float 10s linear infinite;
