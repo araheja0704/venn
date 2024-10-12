@@ -17,24 +17,9 @@ body {
   text-align: center;
 }
 
-.header {
-  width: 100%; /* Use 100% to avoid overflow */
-  padding: 20px 50px; /* Reduced padding for a cleaner layout */
-  display: flex;
-  justify-content: space-between; /* Spread items across the entire width */
-  align-items: center;
-  background-color: #CE5374; /* Add background if needed */
-  border-bottom: 1px solid #800020; /* Line under the header */
-  box-sizing: border-box;
-  position: fixed; /* Fixed header to stick to top */
-  top: 0;
-  left: 0;
-  z-index: 100; /* Ensures header stays on top of other elements */
-}
-
 .nav-links {
   display: flex;
-  justify-content: center; /* Centers navigation links horizontally */
+  justify-content: center;
   gap: 30px;
 
 }
@@ -42,12 +27,12 @@ body {
 .nav-links a {
   text-decoration: none;
   font-weight: bold;
-  color: #ffffff; /* Burgundy text */
+  color: #ffffff; 
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #5f0016; /* Darker burgundy on hover */
+  color: #5f0016; 
 }
 
 .main-logo {
@@ -64,38 +49,36 @@ body {
 
 .primary-button {
   padding: 15px 30px;
-  background-color: #ffffff; /* Burgundy button */
+  background-color: #ffffff; 
   color: #00274C;
   border: none;
   font-size: 1rem;
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
-  outline: none; /* Remove the default blue focus outline */
+  outline: none; 
 }
 
 .primary-button:hover {
-  background-color: #5f0016; /* Darker burgundy on hover */
-  opacity: 0.9; /* Adds a fade-in effect on hover */
+  background-color: #5f0016; 
+  opacity: 0.9; 
 }
 
 .primary-button:focus {
-  background-color: #5f0016; /* Similar color for focus */
-  outline: none; /* Custom focus style (removes blue outline) */
+  background-color: #5f0016; 
+  outline: none; 
 }
 
 .primary-button:active {
-  transform: scale(0.98); /* Adds a slight press effect when clicked */
-  opacity: 0.8; /* Makes the button slightly fade when clicked */
+  transform: scale(0.98); 
+  opacity: 0.8; 
 }
 
-/* Removing focus blue outline and adding custom styles */
+
 .primary-button:focus-visible {
   outline: none;
   opacity: 0.9;
 }
-
-
 
 .container {
   position: relative;
@@ -113,16 +96,16 @@ body {
   height: 100px;
   border-radius: 50%;
   background-color: blue;
-  transition: left 0.02s linear; /* Smooth animation */
+  transition: left 0.02s linear; 
 }
 
 .main-content {
-  position: relative; /* Ensure this is positioned above the bubbles */
-  z-index: 1; /* Higher z-index than the bubbles */
+  position: relative; 
+  z-index: 1; 
 }
 
 .logo-img {
-  width: 400px;  /* Adjust based on your logo size */
+  width: 400px;  
   height: auto;
   filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.4)); /* Shadow under the logo for depth */
   transform: perspective(1000px) rotateX(15deg) rotateY(10deg); /* Perspective transformation for 3D tilt */
