@@ -1,6 +1,0 @@
-{
-    "redirects": [
-      { "source": "/", "destination": "https://vennatmichigan.vercel.app/", "permanent": true }
-    ]
-  }
-  
