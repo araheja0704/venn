@@ -25,8 +25,8 @@ function App() {
         <Navbar /> 
         <div className="wrapper">
         <div className="main-content">
-          <Popup />
           <Logo />
+          <Popup />
           <br />
           <br />
           <br />

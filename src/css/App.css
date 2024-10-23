@@ -35,10 +35,6 @@ body {
   color: #5f0016; 
 }
 
-.main-logo {
-  width: 120px;
-  margin-bottom: 20px;
-}
 
 .brand-name {
   font-size: 2rem;
@@ -110,11 +106,13 @@ body {
   filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.4)); /* Shadow under the logo for depth */
   transform: perspective(1000px) rotateX(15deg) rotateY(10deg); /* Perspective transformation for 3D tilt */
   transition: transform 0.5s ease, filter 0.5s ease; /* Smooth transition effect */
+  position: relative;
+  z-index: 1;
 }
 
 .logo-img:hover {
-  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.1); /* Reset to normal and scale up slightly on hover */
-  filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.6)); /* Enhance shadow on hover for more pronounced depth */
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.1); 
+  filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.6));
 }
 
 .waitlist-btn {

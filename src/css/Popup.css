@@ -1,18 +1,18 @@
 .message-box {
-    position: absolute; /* Make it overlay */
-    top: 50%; /* Adjust vertical position */
-    left: 50%; /* Adjust horizontal position */
+    position: absolute; 
+    top: 55%; 
+    left: 50%; 
     transform: translate(-50%, -50%); 
     width: 33.5rem;
-    max-width: 90vw; /* Ensures it doesn't exceed the viewport width */
+    max-width: 90vw; 
     padding: 0;
-    background-color: #f8dcdc; /* Soft pastel coral */
-    border: 4px solid #000; /* Black border */
-    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.5); /* Dark shadow for 3D effect */
-    font-family: 'Courier New', Courier, monospace; /* Monospace font for retro feel */
+    background-color: #f8dcdc; 
+    border: 4px solid #000; 
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.5); 
+    font-family: 'Verdana', monospace; 
     font-size: larger;
-    border-radius: 8px; /* Slight rounding for a softer look */
-    z-index: 10; /* Ensure it's on top */
+    border-radius: 8px; 
+    z-index: 100; /* Ensure it's on top */
 }
 
 .window-header {
@@ -21,7 +21,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 0.5rem 1rem;
-    background-color: #f4a3a3; /* Lighter pastel coral */
+    background-color: #f4a3a3; 
     color: white;
     border-bottom: 4px solid black;
     font-size: 1.1rem;
@@ -31,7 +31,7 @@
 }
 
 .exit-button {
-    background: #f4a3a3; /* Match header background */
+    background: #f4a3a3; 
     border: 2px solid #000;
     color: #fff;
     font-size: 1.2rem;
@@ -47,7 +47,7 @@
 }
 
 .exit-button:hover {
-    background-color: #e48e8e; /* Slightly darker pastel coral on hover */
+    background-color: #e48e8e; 
 }
 
 .window-body {
@@ -56,60 +56,68 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white; /* White message area */
-    border: 3px solid #000; /* Bold black border */
+    background-color: white; 
+    border: 3px solid #000; 
     font-size: 1rem;
     color: black;
     box-sizing: border-box;
     width: 30rem;
-    max-width: 85vw; /* Ensure it scales down on smaller screens */
-    height: auto; /* Allows for dynamic height */
+    max-width: 85vw;
+    height: auto;
     margin: 1rem auto;
     border-radius: 10px;
 }
 
-.purple-button {
-    background-color: #f4a3a3; /* Pastel coral for the button */
+.coral-button {
+    background-color: #f4a3a3; 
     border: 2px solid #000; 
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Terminal', monospace;
     padding: 0.5rem 1.5rem;
     cursor: pointer;
     text-transform: lowercase;
     display: inline-block;
     margin: 0.5rem;
-    box-shadow: inset 0.25rem 0.25rem #000; /* Inner shadow effect */
-    border-radius: 10px; /* Softer corners */
+    box-shadow: inset 0.25rem 0.25rem #000; 
+    border-radius: 10px; 
     font-size: 0.9rem;
     transition: background-color 0.3s ease;
+    outline: none;
 }
 
-.purple-button:hover {
-    background-color: #e48e8e; /* Darker shade on hover */
+.coral-button:hover {
+    background-color: #e48e8e; 
 }
 
-/* Responsive adjustments */
+.coral-button:focus,
+.coral-button:active {
+    outline: none; 
+    box-shadow: none; 
+    background-color: #e48e8e; 
+}
+
+
 @media (max-width: 700px) {
     .message-box {
-        width: 90%; /* Ensure the box is 90% of the viewport width */
-        max-width: 90%; /* No wider than 90% of screen */
+        width: 90%; 
+        max-width: 90%; 
     }
 
     .window-body {
         width: 90%;
-        height: auto; /* Allow for content to adjust height */
+        height: auto; 
         padding: 1rem;
-        font-size: 0.9rem; /* Slightly smaller font size */
+        font-size: 0.9rem; 
     }
 
     .exit-button {
         width: 1.5rem;
         height: 1.5rem;
-        font-size: 1rem; /* Smaller font size */
+        font-size: 1rem; 
     }
 
-    .purple-button {
-        padding: 0.4rem 1rem; /* Adjust padding for smaller screens */
-        font-size: 0.85rem; /* Slightly smaller font size */
+    .coral-button {
+        padding: 0.4rem 1rem; 
+        font-size: 0.85rem; 
     }
 }

@@ -16,7 +16,7 @@ const MessageBox = () => {
     isVisible && (
       <div className="message-box">
         <div className="window-header">
-          <span>Welcome to Venn! </span>
+          <span>(1) Welcome to Venn! </span>
           <button className="exit-button" onClick={handleClose}>
             ✖
           </button>
@@ -25,7 +25,7 @@ const MessageBox = () => {
           <p>Create a profile with 1-3 friends. Get matched with another group. We'll tell you when and where to meet them. 
           Bonus: Get discounts at your favorite Ann Arbor restaurants when you meet your match</p>
         </div>
-        <button className="purple-button" onClick={handleClose}>
+        <button className="coral-button" onClick={handleClose}>
           I understand
         </button>
       </div>
