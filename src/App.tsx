@@ -2,6 +2,7 @@ import './css/App.css';
 import BubbleBackground from './js/components/Bubbles';
 import Logo from './js/components/Logo';
 import Button from './js/components/Button';
+import Popup from './js/components/Popup'; 
 import InstagramIcon from './js/components/InstagramIcon';
 
 function Navbar() {
@@ -24,6 +25,7 @@ function App() {
         <Navbar /> 
         <div className="wrapper">
         <div className="main-content">
+          <Popup />
           <Logo />
           <br />
           <br />

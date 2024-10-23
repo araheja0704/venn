@@ -1,0 +1,115 @@
+.message-box {
+    position: absolute; /* Make it overlay */
+    top: 50%; /* Adjust vertical position */
+    left: 50%; /* Adjust horizontal position */
+    transform: translate(-50%, -50%); 
+    width: 33.5rem;
+    max-width: 90vw; /* Ensures it doesn't exceed the viewport width */
+    padding: 0;
+    background-color: #f8dcdc; /* Soft pastel coral */
+    border: 4px solid #000; /* Black border */
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.5); /* Dark shadow for 3D effect */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for retro feel */
+    font-size: larger;
+    border-radius: 8px; /* Slight rounding for a softer look */
+    z-index: 10; /* Ensure it's on top */
+}
+
+.window-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #f4a3a3; /* Lighter pastel coral */
+    color: white;
+    border-bottom: 4px solid black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.exit-button {
+    background: #f4a3a3; /* Match header background */
+    border: 2px solid #000;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.exit-button:hover {
+    background-color: #e48e8e; /* Slightly darker pastel coral on hover */
+}
+
+.window-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* White message area */
+    border: 3px solid #000; /* Bold black border */
+    font-size: 1rem;
+    color: black;
+    box-sizing: border-box;
+    width: 30rem;
+    max-width: 85vw; /* Ensure it scales down on smaller screens */
+    height: auto; /* Allows for dynamic height */
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+.purple-button {
+    background-color: #f4a3a3; /* Pastel coral for the button */
+    border: 2px solid #000; 
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    text-transform: lowercase;
+    display: inline-block;
+    margin: 0.5rem;
+    box-shadow: inset 0.25rem 0.25rem #000; /* Inner shadow effect */
+    border-radius: 10px; /* Softer corners */
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.purple-button:hover {
+    background-color: #e48e8e; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+    .message-box {
+        width: 90%; /* Ensure the box is 90% of the viewport width */
+        max-width: 90%; /* No wider than 90% of screen */
+    }
+
+    .window-body {
+        width: 90%;
+        height: auto; /* Allow for content to adjust height */
+        padding: 1rem;
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+
+    .exit-button {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .purple-button {
+        padding: 0.4rem 1rem; /* Adjust padding for smaller screens */
+        font-size: 0.85rem; /* Slightly smaller font size */
+    }
+}
